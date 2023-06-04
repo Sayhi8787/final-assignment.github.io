@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>蛤</title>
+        <script>
+            function jion(){
+                var peo=document.getElementById("people");
+                if(people.value==""){
+                  alert("請輸入痕跡!!");
+                }
+                else{
+                  var txtNode = document.createTextNode(people.value);
+                  var li = document.createElement("li");
+                  li.appendChild(txtNode);
+                  var list = document.getElementById("list");
+                  list.appendChild(li);
+                 document.getElementById("peopleCount").innerText=list.children.length;
+                }
+                }
+                
+                //function tome(){ver menu=document.getElementById("list");    menu.classList.toggle("hide");}
+        </script>
+        <style>
+            body {background: #fc0}
+            #header{background:#2187af;text-align:center}
+            #left{float:left;background:#992255;width:33%;border-style:groove}
+            #right{float:right;background:#700;width:33%;border-style:ridge;color: #222}
+            .content{margin-left:33%;margin-right:33%;background:#9a5;text-align:center}
+            #foot{clear:both;background:#ad4;text-align:center}
+
+            ul{background:#999;margin:7px;border-style:dashed;}
+            input{background: #0f5}
+            form{color: #60f}
+            optgroup{color: #60f;background: #0f5}
+            textarea{background: #555}
+            #f1{background: #197;margin:7px;border-style:dashed;width:20em;border-color     : #601}
+            #f2{border-style:solid;width:20em;}
+            .f3{border-style:dashed;width:20em;border-color     : #601;background: #7f9}
+            #f4{border-right:solid #f5891f 10px;width:30%}
+            #p1{color: #915ac7}
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>蛤很重要，必須保留</h1>
+          </div>
+          <div id="left">
+            <a href="https://codepen.io/Sayhi87/pen/YzOqEYm" target="_black">很簡略的自我介紹</a>
+            <br>
+            <p>B1121090</p>
+            <ul>
+            <li><ol type="a">
+              <li><b>蛤</b></li>
+              <li>蛤</li>
+              <li>蛤</li>
+            </ol></li>  
+            <li><ol start=9 id="li1">
+              <li>蛤</li>
+              <li>蛤</li>
+              <li>蛤</li>
+            </ol></li>
+            <li><ol reversed=5>
+              <li>蛤</li>
+              <li>蛤</li>
+              <li>蛤</li>
+            </ol></li>
+          <li><dl>
+            <dt>蛤</dt>
+            <dd>x蛤</dd>
+            <dt>蛤</dt>
+            <dd>-蛤</dd>
+            </dl></li></ul>
+            <div class="twoimg"><div class="box-item">
+              <img src="https://picsum.photos/seed/picsum/200/300">
+                <p>別看</p></div></div>
+              <div class="twoimg"><div class="box-item">
+              <img src="https://picsum.photos/seed/picsum/200/300">
+              <p>蛤</p></div></div>
+          </div>
+          
+          <div id="right">
+            <h3>確認身分</h3>
+          <form name="login" action="http://httpbin.org/get" id="f1">
+            帳號:<input name="account" type="text" size="19"><br>
+            密碼:<input name="account" type="password" size="19"><br>
+            <input type="submit" value="登入" onclick="alert('蛤');">
+          </form>
+          
+          <hr>
+          
+          <h3>品項選擇</h3>
+          <form name="surver" id="f2">
+            請問您需要: <select name="品項選擇">
+            <optgroup label="文具">
+              <option value="1">原子筆
+              <option value="2">修正帶
+                <option value="3">筆記本
+                  <option value="4">直尺
+            </optgroup>
+            <optgroup label="其他">
+              <option value="5">釘書機
+              <option value="6">訂書針
+            </optgroup>
+              </select><br>
+           <input type="submit" value="確定" onclick="alert('蛤');">
+          </form>
+          
+          <hr>
+          
+          <h3 id="p1">貨品預訂</h3>
+          <form name="貨品預訂" class="f3">
+            希望取貨日期:<input name="取貨日期" type="date" value="2020-12-31"><br>
+            希望取貨時間:<input name="取貨時間" type="time" value="18:00"><br>
+            E-mail:<input name="email" type="email"><br>
+            連絡電話:<input name="tel" type="tel"><br>
+            訂購者姓名:<input name="name" type="text" size="19">
+            性別:<input name="sex" type="radio" value="man">男
+            <input name="sex" type="radio" value="woman">女<br>
+            收件者姓名:<input name="name2" type="text" size="19">
+            性別:<input name="sex2" type="radio" value="man">男
+            <input name="sex" type="radio" value="woman">女<br>
+            送貨地址:<input name="name" type="text" size="15"><br>
+            <input type="reset" value="清除">
+            <input type="submit" value="確定" onclick="alert('蛤');">
+          </form>
+          
+          <h3>對本次服務的評分</h3>
+          <form name="貨品預訂" id="f4">
+          商品種類:不滿意<input name="商品種類" type="range" min="1" max="100">滿意<br>
+          方便程度:不方便<input name="方便程度" type="range" min="1" max="100">方便<br>
+          整體服務:不滿意<input name="整體服務" type="range" min="1" max="100">滿意<br>
+          對本站的意見:<br>
+            <textarea name="comment" rows="5"cpls="25"></textarea><br>
+            <input type="reset" value="清除">
+            <input type="submit" value="送出" onclick="alert('蛤');">
+              
+            </form>
+          </div>
+          
+          <div class="content">
+            <a href="hhttps://codepen.io/Sayhi87/pen/KKxajbP" target="_black">蛤</a>
+            <br>
+            <a href="https://codepen.io/Sayhi87/pen/BaOrPjV" target="_black">another</a>
+            <p>留下你的痕跡:<input id="people" type="text"></p>
+            <button onclick="jion()">添加</button>
+            <p>目前有<span id="peopleCount">0</span>筆痕跡<p>
+            <div>
+                <ul id="list" onclick="tome"></ul>
+              </div>
+          </div>
+            
+            <div id="foot">
+            <h2>放心，偶爾更新</h2>
+          </div>
+    </body>
+    </html>
