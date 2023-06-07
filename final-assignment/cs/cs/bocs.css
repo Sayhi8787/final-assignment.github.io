@@ -1,0 +1,17 @@
+ body {background: #fc0}
+    #header{background:#2187af;text-align:center}
+            #left{float:left;background:#992255;width:33%;border-style:groove}
+            #right{float:right;background:#700;width:33%;border-style:ridge;color: #222}
+            .content{margin-left:33%;margin-right:33%;background:#9a5;text-align:center}
+            #foot{clear:both;background:#ad4;text-align:center}
+
+            ul{background:#999;margin:7px;border-style:dashed;}
+            input{background: #0f5}
+            form{color: #60f}
+            optgroup{color: #60f;background: #0f5}
+            textarea{background: #555}
+            #f1{background: #197;margin:7px;border-style:dashed;width:20em;border-color     : #601}
+            #f2{border-style:solid;width:20em;}
+            .f3{border-style:dashed;width:20em;border-color     : #601;background: #7f9}
+            #f4{border-right:solid #f5891f 10px;width:30%}
+            #p1{color: #915ac7}
