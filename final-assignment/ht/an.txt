@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>很簡略的自我介紹</title>
+   </head> 
+   <body>
+    <h3>確認身分</h3>
+<form name="login" action="http://httpbin.org/get" id="f1">
+  帳號:<input name="account" type="text" size="19"><br>
+  密碼:<input name="account" type="password" size="19"><br>
+  <input type="submit" value="登入">
+</form>
+
+<hr>
+
+<h3>品項選擇</h3>
+<form name="surver" id="f2">
+  請問您需要: <select name="品項選擇">
+  <optgroup label="文具">
+    <option value="1">原子筆
+    <option value="2">修正帶
+      <option value="3">筆記本
+        <option value="4">直尺
+  </optgroup>
+  <optgroup label="其他">
+    <option value="5">釘書機
+    <option value="6">訂書針
+  </optgroup>
+    </select><br>
+ <input type="submit" value="確定">
+</form>
+
+<hr>
+
+<h3 id="p1">貨品預訂</h3>
+<form name="貨品預訂" class="f3">
+  希望取貨日期:<input name="取貨日期" type="date" value="2020-12-31"><br>
+  希望取貨時間:<input name="取貨時間" type="time" value="18:00"><br>
+  E-mail:<input name="email" type="email"><br>
+  連絡電話:<input name="tel" type="tel"><br>
+  訂購者姓名:<input name="name" type="text" size="19">
+  性別:<input name="sex" type="radio" value="man">男
+  <input name="sex" type="radio" value="woman">女<br>
+  收件者姓名:<input name="name2" type="text" size="19">
+  性別:<input name="sex2" type="radio" value="man">男
+  <input name="sex" type="radio" value="woman">女<br>
+  送貨地址:<input name="name" type="text" size="15"><br>
+  <input type="reset" value="清除">
+  <input type="submit" value="確定">
+</form>
+
+<div>看右邊</div>
+
+<h3>對本次服務的評分</h3>
+<form name="貨品預訂" id="f4">
+商品種類:不滿意<input name="商品種類" type="range" min="1" max="100">滿意<br>
+方便程度:不方便<input name="方便程度" type="range" min="1" max="100">方便<br>
+整體服務:不滿意<input name="整體服務" type="range" min="1" max="100">滿意<br>
+對本站的意見:<br>
+  <textarea name="comment" rows="5"cpls="25"></textarea><br>
+  <input type="reset" value="清除">
+  <input type="submit" value="送出">
+    
+  </form>
+    </body>
+</html>
